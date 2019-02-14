@@ -1,5 +1,110 @@
 
+*{
+    padding: 0px;
+    margin: 0px;
 
+}
+
+.headControl{
+    background-color: #ff3ede;
+    width: 100%;
+    height: 80px;
+}
+.control-logo{
+    width: 980px;
+    height: 300px;
+    margin-left:auto ;
+    margin-right: auto;
+}
+
+.img-cont{
+    float: left;
+}
+.img-cont img{
+    height: 50px;
+    width: 210px;
+    margin-top: 17px;
+}
+
+.login{
+    float: right;
+    font-family: Verdana;
+    font-size: 13px;
+    margin-top: 10px;
+    color: black;
+
+}
+.login-txt{
+    width: 150px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn{
+    background-color: #a792d3;
+    color: white;
+    font-family: Verdana;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 3px;
+    border-left: 5px;
+}
+
+.login a{
+    color: white;
+    text-decoration: none;
+}
+.control-cont{
+    width: 980px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left-side{
+    margin-top: 30px;
+    float: left;
+    width: 400px;
+    font-family: Verdana;
+
+}
+.right-side{
+    float: right;
+    font-family: Verdana;
+    margin-top: 20px;
+}
+
+/* just trying c ideas */
+.input{
+    margin: 10px 0px 10px 0px;
+}
+.input label{
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+
+.input input{
+    height:30px;
+    width: 90%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px #d386d1;
+
+}
+form{
+    width: auto;
+    margin: 5px auto;
+    padding: 20px;
+    border: 1px solid #d9b9b8;
+    background: #ffd6f8;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+
+
+/*
 .justHeader{
     position: fixed;
     width: 100%;
