@@ -93,15 +93,39 @@
 
 }
 form{
-    width: auto;
+    width: 80%;
     margin: 5px auto;
     padding: 20px;
     border: 1px solid #d9b9b8;
     background: #ffd6f8;
     border-radius: 0px 0px 10px 10px;
-
 }
 
+section {
+    text-align: center;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana;
+}
+
+#aboutYou {
+    text-wrap: normal;
+    width: 95%;
+    height: 200px;
+}
+#qualification {
+    text-wrap: normal;
+    width: 95%;
+    height: 200px;
+}
+#prof {
+    height: 60px;
+    width: 95%;
+    font-size: 13px;
+}
 
 
 /*
