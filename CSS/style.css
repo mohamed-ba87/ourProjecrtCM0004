@@ -1,114 +1,123 @@
-
-*{
-    padding: 0px;
-    margin: 0px;
+body {
+    margin-left: auto;
+    margin-right: auto;
     font-family: Verdana;
+    padding: 0;
+    font-size: 13px;
+    background-image: url("https://images.unsplash.com/photo-1509624776920-0fac24a9dfda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-size: 50%;
+}
+
+header {
+    background-color: #716170;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
 }
 
 .headControl{
-    background-color: #ff3ede;
+    background-color: #716170;
     width: 100%;
-    height: 80px;
+    height: 100px;
+    margin-bottom: 20px;
 }
 .control-logo{
-    width: 980px;
+    width: 100%;
     height: 300px;
     margin-left:auto ;
     margin-right: auto;
 }
 
-.img-cont{
+.logo {
     float: left;
 }
-.img-cont img{
+
+.logo img{
     height: 50px;
     width: 210px;
-    margin-top: 17px;
+    margin: 17px;
 }
 
 .login{
     float: right;
     font-family: Verdana;
-    font-size: 13px;
+    font-size: 16px;
     margin-top: 10px;
-    color: black;
-
-}
-.login-txt{
-    width: 150px;
-    height: 25px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.btn{
-    background-color: #a792d3;
     color: white;
+}
+
+.btn{
+    background-colour: white;
+    color: black;
     font-family: Verdana;
-    padding: 5px 10px 5px 10px;
+    padding: 10px 15px 10px 15px;
     border: none;
     border-radius: 3px;
     border-left: 5px;
+    border: 2px #5d4f5c;
 }
 
 .login a{
     color: white;
     text-decoration: none;
 }
-.control-cont{
-    width: 980px;
-    height: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.left-side{
-    margin-top: 30px;
-    float: left;
-    width: 400px;
-    font-family: Verdana;
 
-}
-.right-side{
-    float: right;
-    font-family: Verdana;
-    margin-top: 20px;
-}
-
-/* just trying c ideas */
 .input{
     margin: 10px 0px 10px 0px;
 }
+
+#title {
+    color: #5d4f5c;
+    text-align: center;
+}
+
 .input label{
     display: block;
     text-align: left;
     margin: 3px;
+    text-size: 13px;
 }
 
 .input input{
-    height:30px;
+    height:40px;
     width: 90%;
     padding: 5px 10px;
     font-size: 16px;
-    border-radius: 5px;
-    border: 1px #d386d1;
-
+    border-radius: 10px;
+    border: 1px #717171;
 }
+
 form{
     width: 80%;
-    margin: 5px auto;
-    padding: 20px;
-    border: 1px solid #d9b9b8;
-    background: #ffd6f8;
-    border-radius: 0px 0px 10px 10px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #cacaca;
+    background: #ebebeb;
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-section {
+form>h2 {
     text-align: center;
+    color: #443843;
+}
+form>h3 {
+    text-align: center;
+    color: #443843;
 }
 
-body {
-    padding: 0px;
-    margin: 0px;
-    font-family: Verdana;
+#tradeForm {
+    display: block;
+    text-align: center;
+    color: #443843;
+}
+
+#userForm {
+    display: block;
+    text-align: center;
+    color: #443843;
 }
 
 #aboutYou {
@@ -126,7 +135,6 @@ body {
     width: 95%;
     font-size: 13px;
 }
-
 
 /*
 .justHeader{
