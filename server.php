@@ -53,7 +53,7 @@ if(isset($_POST['userRej'])){
         mysqli_query($db,$put);
         $_SESSION['username']= $usermane;
         $_SESSION['success'] = "you are now logged in Successfully !";
-        //header('location: index.php);
+        //header('location: index.html);
     }
 
 } // end of the  IF  for the user application
@@ -74,7 +74,7 @@ if (isset($_POST['username'])){
         if(mysqli_num_rows($result)==1){
             $_SESSION ['username']= $username;
             $_SESSION['success']= "you are no logged in Successfully";
-            header('location: index.php');
+            header('location: index.html');
 
         }else{array_push($error,"wrong username/or password");}
     }
