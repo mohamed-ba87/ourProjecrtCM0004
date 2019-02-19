@@ -26,7 +26,7 @@
                     <td>Password</td>
                 </tr>
                 <tr>
-                    <td><input  class="login-txt" type="email" name="username" placeholder="Email" ></td>
+                    <td><input  class="login-txt" type="text" name="username" placeholder="USername/Email" ></td>
                     <td><input class="login-txt" type="password" name="pasword" placeholder="Enter Password"></td>
                     <td><input type="submit" name="login" value="Login" class="btn"></td>
                 </tr>
@@ -49,6 +49,8 @@
     <section class = grid-50>
 
     <form>
+        <?php include('error.php');?>
+
         <h2>Create a User Account</h2>
         <h3>I need help!</h3>
         <div class="input">
@@ -57,13 +59,13 @@
         </div>
         <div class="input">
             <label>Last Name</label>
-            <input type="text" name="u2name" placeholder="last name">
+            <input type="text" name="2name" placeholder="last name">
         </div>
         <div class="input">
             <label>Address</label>
-            <input type="text" name="num" placeholder=""><br>
-            <input type="text" name="1num" placeholder=""><br>
-            <input type="text" name="2num" placeholder=""><br>
+            <input type="text" name="add1" placeholder="first line "><br>
+            <input type="text" name="add2" placeholder="2end add line"><br>
+            <input type="text" name="city" placeholder=" City Name"><br>
             <label>Post Code</label>
             <input type="text" name="postcode" placeholder="postcode">
         </div>
