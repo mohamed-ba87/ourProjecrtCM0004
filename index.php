@@ -9,26 +9,25 @@
 <body>
 
 <main class = "grid-container">
-
     <div class = "grid-100">
 
         <div class = "headControl">
-            <div class="control-logo">
+            <div  class="control-logo">
 
-                <header>
+                <header >
                     <div class = "logo">
                         <img src = "#">
                     </div>
 
                     <div class = "login">
-                        <table>
+                        <table >
                             <tr>
                                 <td>Username or Email</td>
                                 <td>Password</td>
                             </tr>
                             <tr>
-                                <td><input  class="login-txt" type="email" name="username" placeholder="Email" ></td>
-                                <td><input class="login-txt" type="password" name="password" placeholder="Enter Password"></td>
+                                <td><input  class="login-txt" type="email" name="username5" placeholder="Email" ></td>
+                                <td><input class="login-txt" type="password" name="password5" placeholder="Enter Password"></td>
                                 <td><input type="submit" name="login" value="Login" class="btn"></td>
                             </tr>
                             <tr>
@@ -42,6 +41,7 @@
         </div>
     </div>
 
+
     <div id = "title">
         <h1>Tradesman Aberdeen </h1>
         <h2>Connecting  tradesmen to the people who need them.</h2>
@@ -49,7 +49,7 @@
 
     <section class = grid-50>
         <div id = "userForm">
-            <form>
+            <form method="post" action="server.php">
                 <h2>Create a User Account</h2>
                 <h3>I need help!</h3>
                 <div class="input">
@@ -62,9 +62,9 @@
                 </div>
                 <div class="input">
                     <label>Address</label>
-                    <input type="text" name="num" placeholder=""><br>
-                    <input type="text" name="1num" placeholder=""><br>
-                    <input type="text" name="2num" placeholder=""><br>
+                    <input type="text" name="add1" placeholder=""><br>
+                    <input type="text" name="add2" placeholder=""><br>
+                    <input type="text" name="city" placeholder=""><br>
                     <label>Post Code</label>
                     <input type="text" name="postcode" placeholder="postcode">
                 </div>
