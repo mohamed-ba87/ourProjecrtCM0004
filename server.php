@@ -113,8 +113,8 @@ if (isset($_POST['Login'])){
 
     if (empty($error)){
         $password1= md5($lo_password);
-        $do= "SELECT * FROM user_info, tradesman_info WHERE ((user_info.username ='$lo_username' OR user_info.email= '$email' ) AND user_info.password='$password1')
-                OR ((tradesman_info.username= '$lo_username' OR tradesman_info.email = '$email') AND tradesman_info.password= '$password1')";
+        $do= "SELECT * FROM user_info, tradesman_info WHERE ((username ='$lo_username' OR email= '$email' ) AND password='$password1')";
+              //  OR ((tradesman_info.username= '$lo_username' OR tradesman_info.email = '$email') AND tradesman_info.password= '$password1')";
         $result= mysqli_query($db,$do);
 
         if(mysqli_num_rows($result)==1){
