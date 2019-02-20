@@ -105,16 +105,16 @@ if(isset($_POST['userRej'])){
 // LOGIN OF USER
 if (isset($_POST['Login'])){
 
-    $username = mysqli_real_escape_string($db,$_POST['username5']);
-    $password = mysqli_real_escape_string($db,$_POST['password5']);
+    $lo_username = mysqli_real_escape_string($db,$_POST['username5']);
+    $lo_password = mysqli_real_escape_string($db,$_POST['password5']);
 
-    if(empty($username)){ array_push($error,"username is required");}
-    if(empty($password)){ array_push($error,"password is required");}
+    if(empty($lo_username)){ array_push($error,"username is required");}
+    if(empty($lo_password)){ array_push($error,"password is required");}
 
     if (empty($error)){
         //$password= md5($password);
-        $do= "SELECT * FROM user_info, tradesman_info WHERE ((user_info.username ='$username' OR user_info.email= '$email' ) AND user_info.password='$password')
-                OR ((tradesman_info.username= '$username' OR tradesman_info.email = '$email') AND tradesman_info.password= '$password')";
+        $do= "SELECT * FROM user_info, tradesman_info WHERE ((user_info.username ='$lo_username' OR user_info.email= '$email' ) AND user_info.password='$lo_password')
+                OR ((tradesman_info.username= '$lo_username' OR tradesman_info.email = '$email') AND tradesman_info.password= '$lo_password')";
         $result= mysqli_query($db,$do);
         echo " we done it ";
         if(mysqli_num_rows($result)<2){
