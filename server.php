@@ -105,8 +105,8 @@ if(isset($_POST['userRej'])){
 // LOGIN OF USER
 if (isset($_POST['Login'])){
 
-    $lo_username = mysqli_real_escape_string($db,$_POST['username5']);
-    $lo_password = mysqli_real_escape_string($db,$_POST['password5']);
+    $lo_username = filter_input($db,$_POST['username5']);
+    $lo_password = filter_input($db,$_POST['password5']);
 
     if(empty($lo_username)){ array_push($error,"username is required");}
     if(empty($lo_password)){ array_push($error,"password is required");}
