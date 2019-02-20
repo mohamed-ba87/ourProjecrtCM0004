@@ -28,7 +28,7 @@
                             <tr>
                                 <td><input  class="login-txt" type="email" name="username5" placeholder="Email" ></td>
                                 <td><input class="login-txt" type="password" name="password5" placeholder="Enter Password"></td>
-                                <td><input type="submit" name="login" value="Login" class="btn"></td>
+                                <td><input type="submit" name="Login" value="Login" class="btn"></td>
                             </tr>
                             <tr>
                                 <td>&nbsp</td>
@@ -146,7 +146,7 @@
                 </div>
                 <div class="input">
                     <label>About you</label>
-                    <textarea name = "About You" id="aboutYou">
+                    <textarea name = "About_You" id="aboutYou">
                     Please enter a brief description of yourself and the work you do.
                 </textarea>
                 </div>
