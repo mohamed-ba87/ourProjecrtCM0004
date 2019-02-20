@@ -112,14 +112,13 @@ if (isset($_POST['Login'])){
     if(empty($lo_password)){ array_push($error,"password is required");}
 
     if (empty($error)){
-        //$password= md5($password);
-        $do= "SELECT * FROM user_info, tradesman_info WHERE ((user_info.username ='$lo_username' OR user_info.email= '$email' ) AND user_info.password='$lo_password')
-                OR ((tradesman_info.username= '$lo_username' OR tradesman_info.email = '$email') AND tradesman_info.password= '$lo_password')";
+        $password1= md5($lo_password);
+        $do= "SELECT * FROM user_info, tradesman_info WHERE ((user_info.username ='$lo_username' OR user_info.email= '$email' ) AND user_info.password='$password1')
+                OR ((tradesman_info.username= '$lo_username' OR tradesman_info.email = '$email') AND tradesman_info.password= '$password1')";
         $result= mysqli_query($db,$do);
-        echo " we done it ";
-        if(mysqli_num_rows($result)<2){
-            echo " we done it 1";
-            $_SESSION ['username']= $username;
+
+        if(mysqli_num_rows($result)==1){
+            $_SESSION ['username']= $lo_username;
             $_SESSION['success']= "you are no logged in Successfully";
             echo " we done it 2";
             header('location: index.php/?we done it ');
